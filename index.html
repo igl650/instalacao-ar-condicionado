@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saron Instalação de Split · Viamão, RS</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Instalação e manutenção de ar-condicionado split em Viamão, RS. Orçamento pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#0A66C2;
+  --azul-escuro:#0B2E59;
+  --azul-claro:#EAF4FD;
+  --branco:#fff;
+  --texto:#263445;
+  --cinza:#5B6B7C;
+  --borda:#DCE6F0;
+  --zap:#1FA855;
+  --raio:12px;
+  --sombra:0 4px 18px rgba(11,46,89,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--branco);color:var(--texto);font:400 16px/1.6 "Open Sans",system-ui,sans-serif;padding-bottom:76px}
+h1,h2,h3{font-family:"Poppins",sans-serif;color:var(--azul-escuro);line-height:1.2;margin:0}
+p,ul,ol,figure,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+svg{display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.cab{text-align:center;max-width:640px;margin:0 auto 32px}
+.cab span{color:var(--azul);font:600 13px/1 "Poppins",sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.cab h2{font-size:28px;margin-top:8px}
+.cab p{color:var(--cinza);margin-top:10px}
+
+/* dado pendente */
+.tk{background:#FFF3BF;border:1px dashed #B58900;color:#5C4500;font-size:.88em;padding:1px 6px;border-radius:4px}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:600 16px/1 "Poppins",sans-serif;text-decoration:none;padding:15px 22px;border-radius:8px;border:2px solid transparent}
+.btn svg{width:20px;height:20px;flex:none}
+.zap{background:var(--zap);color:#fff}
+.linha{border-color:var(--azul);color:var(--azul);background:#fff}
+.azul{background:var(--azul);color:#fff}
+
+/* topo */
+header{background:#fff;border-bottom:1px solid var(--borda);position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:20px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.logo svg{width:32px;height:32px;color:var(--azul)}
+.logo b{font:700 21px/1 "Poppins",sans-serif;color:var(--azul-escuro);display:block}
+.logo small{font-size:11px;color:var(--cinza);display:block;margin-top:3px}
+nav{display:none}
+header .fone{font-weight:600;color:var(--azul-escuro);text-decoration:none;font-size:15px}
+header .btn{display:none}
+
+/* abertura */
+.hero{background:linear-gradient(180deg,var(--azul-claro),#fff);padding:40px 0 48px}
+.hero .selo{display:inline-block;background:#fff;border:1px solid var(--borda);color:var(--azul);font-weight:600;font-size:13px;padding:6px 12px;border-radius:99px}
+.hero h1{font-size:32px;margin-top:16px}
+.hero h1 em{font-style:normal;color:var(--azul)}
+.hero p{font-size:17px;color:var(--cinza);margin-top:14px}
+.hero .acoes{display:grid;gap:10px;margin-top:24px}
+.hero ul{margin-top:22px;display:grid;gap:8px;font-size:15px}
+.hero li{display:flex;gap:8px;align-items:flex-start}
+.hero li svg{width:20px;height:20px;color:var(--azul);flex:none;margin-top:2px}
+.hero figure{margin-top:32px}
+
+/* imagem reservada */
+.ph{background:#D9E8F6;border:2px dashed #9DBBD8;border-radius:var(--raio);display:flex;align-items:center;justify-content:center;text-align:center;color:#3B5B7A;font-size:13px;padding:16px}
+.ph b{display:block;font-family:"Poppins",sans-serif}
+.r43{aspect-ratio:4/3}.r32{aspect-ratio:3/2}.r11{aspect-ratio:1/1}
+
+/* serviços */
+.cards{display:grid;gap:20px}
+.card{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);box-shadow:var(--sombra);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{border-radius:0;border-width:0 0 2px}
+.card .corpo{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card h3{font-size:21px}
+.card li{padding-left:26px;position:relative;margin-top:7px;font-size:15px}
+.card li::before{content:"";position:absolute;left:2px;top:6px;width:12px;height:7px;border-left:2px solid var(--azul);border-bottom:2px solid var(--azul);transform:rotate(-45deg)}
+.card .info{background:var(--azul-claro);border-radius:8px;padding:12px;font-size:14.5px;display:grid;gap:4px}
+.card .btn{margin-top:auto}
+
+/* diferenciais */
+.fundo{background:var(--azul-claro)}
+.difs{display:grid;gap:16px}
+.dif{background:#fff;border-radius:var(--raio);padding:20px;box-shadow:var(--sombra);display:flex;gap:14px;align-items:flex-start}
+.ico{width:46px;height:46px;border-radius:10px;background:var(--azul-claro);color:var(--azul);display:flex;align-items:center;justify-content:center;flex:none}
+.ico svg{width:24px;height:24px}
+.dif h3{font-size:17px}
+.dif p{font-size:14.5px;color:var(--cinza);margin-top:4px}
+
+/* passos */
+.passos{display:grid;gap:18px;counter-reset:p}
+.passos li{counter-increment:p;display:flex;gap:14px}
+.passos li::before{content:counter(p);width:40px;height:40px;border-radius:50%;background:var(--azul);color:#fff;font:700 17px/40px "Poppins",sans-serif;text-align:center;flex:none}
+.passos h3{font-size:17px}
+.passos p{font-size:15px;color:var(--cinza);margin-top:3px}
+
+/* área */
+.area{background:var(--azul-escuro);color:#fff}
+.area .cab h2{color:#fff}.area .cab span{color:#8CC4FF}.area .cab p{color:#C9DBEE}
+.bairros{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.bairros li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:99px;font-size:15px}
+.area .centro{text-align:center;margin-top:26px}
+
+/* depoimentos */
+.depo{background:#fff;border:1px solid var(--borda);border-radius:var(--raio);padding:22px;box-shadow:var(--sombra)}
+.estrelas{display:flex;gap:3px;color:#C4CFDA;margin-bottom:10px}
+.estrelas svg{width:18px;height:18px}
+.depo cite{display:block;font-style:normal;font-weight:600;margin-top:12px;font-size:14.5px}
+.fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--borda);border-radius:10px;margin-bottom:10px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 44px 16px 18px;font-weight:600;color:var(--azul-escuro);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:10px;font-size:24px;color:var(--azul)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 18px 18px;color:var(--cinza)}
+
+/* contato */
+.contato .caixa{background:var(--azul);color:#fff;border-radius:16px;padding:32px 22px;display:grid;gap:26px}
+.contato h2{color:#fff;font-size:26px}
+.contato .caixa > div > p{margin-top:10px;color:#DCEBFA}
+.contato .btn{margin-top:20px;width:100%}
+.contato dl{display:grid;gap:16px;font-size:15.5px}
+.contato dt{font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:#B9D8F7}
+.contato dd a{text-decoration:none;border-bottom:1px solid currentColor}
+footer{background:var(--azul-escuro);color:#C9DBEE;font-size:13.5px;text-align:center;padding:22px 0}
+
+/* barra fixa */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--borda);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.barra .btn{width:100%}
+a:focus-visible,summary:focus-visible{outline:3px solid #FFB703;outline-offset:2px}
+
+@media (min-width:700px){
+  .cards{grid-template-columns:1fr 1fr}
+  .difs{grid-template-columns:1fr 1fr}
+  .tres{grid-template-columns:repeat(3,1fr)}
+  .fotos{grid-template-columns:repeat(3,1fr)}
+  .hero .acoes{grid-template-columns:auto auto;justify-content:start}
+}
+@media (min-width:960px){
+  body{padding-bottom:0;font-size:17px}
+  .barra{display:none}
+  section{padding:80px 0}
+  .cab{margin-bottom:44px}
+  .cab h2{font-size:36px}
+  header .wrap{height:76px}
+  nav{display:flex;gap:26px;font-size:15px;margin-left:auto}
+  nav a{text-decoration:none;color:var(--texto)}
+  nav a:hover{color:var(--azul)}
+  header .btn{display:inline-flex;padding:12px 18px;font-size:15px}
+  .hero{padding:72px 0 80px}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .hero h1{font-size:48px}
+  .hero p{font-size:19px}
+  .hero figure{margin-top:0}
+  .difs{grid-template-columns:repeat(4,1fr)}
+  .dif{flex-direction:column}
+  .passos{grid-template-columns:repeat(4,1fr);gap:28px}
+  .passos li{flex-direction:column}
+  .contato .caixa{grid-template-columns:1.2fr 1fr;padding:52px;align-items:center}
+  .contato .btn{width:auto}
+  .contato h2{font-size:34px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M3.300 7l17.400 10M20.700 7 3.300 17M9 4l3 2.500L15 4M9 20l3-2.500 3 2.500M4 11.500l.700-3.800L1.500 6M20 11.500l-.700-3.800L22.500 6M4 12.500l.700 3.800L1.500 18M20 12.500l-.700 3.800 3.200 1.700"/></svg>
+      <span><b>Saron</b><small>Instalação de Split</small></span>
+    </a>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#area">Área atendida</a>
+      <a href="#perguntas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="fone" href="tel:+5551983190048">(51) 98319-0048</a>
+    <a class="btn zap" data-msg="Olá! Gostaria de um orçamento." href="https://wa.me/5551983190048">Pedir orçamento</a>
+  </div>
+</header>
+
+<div class="hero" id="topo">
+  <div class="wrap">
+    <div>
+      <span class="selo">Viamão e região</span>
+      <h1>Instalação e manutenção de <em>ar-condicionado split</em> em Viamão</h1>
+      <p>Somos especializados em split. Instalamos, limpamos e consertamos o seu aparelho, para refrescar no verão e aquecer no inverno.</p>
+      <div class="acoes">
+        <a class="btn zap" data-msg="Olá! Gostaria de um orçamento para instalação de split." href="https://wa.me/5551983190048">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" aria-hidden="true"><path d="M4 20l1.400-4.400A8 8 0 1 1 8.500 19L4 20Z"/></svg>
+          Orçamento pelo WhatsApp
+        </a>
+        <a class="btn linha" href="tel:+5551983190048">Ligar agora</a>
+      </div>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Especialistas em split</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Orçamento rápido pelo WhatsApp</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.500" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Garantia: <span class="tk">[garantia do serviço]</span></li>
+      </ul>
+    </div>
+    <figure class="ph r43"><div><b>Imagem 1 · 4:3</b>Técnico instalando a evaporadora do split na parede</div></figure>
+  </div>
+</div>
+
+<main>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="cab">
+      <span>Nossos serviços</span>
+      <h2>Tudo para o seu split funcionar bem</h2>
+      <p>Da instalação do aparelho novo ao conserto e à limpeza do que já está na parede.</p>
+    </div>
+    <div class="cards">
+      <article class="card" id="instalacao">
+        <figure class="ph r32"><div><b>Imagem 2 · 3:2</b>Condensadora instalada em parede externa</div></figure>
+        <div class="corpo">
+          <h3>Instalação de split</h3>
+          <p>Comprou o aparelho? Fazemos a instalação completa, com acabamento limpo e teste de funcionamento.</p>
+          <ul>
+            <li>Fixação da evaporadora e da condensadora</li>
+            <li>Tubulação de cobre, dreno e ligação elétrica do aparelho</li>
+            <li>Vácuo na linha e teste no frio e no quente</li>
+            <li><span class="tk">[materiais e metragem de tubulação inclusos]</span></li>
+          </ul>
+          <div class="info">
+            <span><strong>Tempo de serviço:</strong> <span class="tk">[tempo médio]</span></span>
+            <span><strong>Marcas:</strong> <span class="tk">[marcas atendidas]</span></span>
+            <span><strong>Valor:</strong> <span class="tk">[preço ou "sob consulta"]</span></span>
+          </div>
+          <a class="btn zap" data-msg="Olá! Gostaria de um orçamento para instalação de split. Modelo/BTUs: ___. Bairro: ___." href="https://wa.me/5551983190048">Orçar instalação</a>
+        </div>
+      </article>
+      <article class="card" id="manutencao">
+        <figure class="ph r32"><div><b>Imagem 3 · 3:2</b>Técnico limpando o filtro da evaporadora</div></figure>
+        <div class="corpo">
+          <h3>Manutenção e limpeza</h3>
+          <p>Seu split não gela, pinga, faz barulho ou está com cheiro ruim? Fazemos o diagnóstico e o conserto.</p>
+          <ul>
+            <li>Aparelho que não gela ou não esquenta</li>
+            <li>Vazamento de água dentro de casa</li>
+            <li>Barulho, mau cheiro ou disjuntor desarmando</li>
+            <li>Limpeza e higienização periódica</li>
+          </ul>
+          <div class="info">
+            <span><strong>Urgência:</strong> <span class="tk">[atende fora de horário?]</span></span>
+            <span><strong>Valor da limpeza:</strong> <span class="tk">[preço ou "sob consulta"]</span></span>
+          </div>
+          <a class="btn zap" data-msg="Olá! Preciso de manutenção no meu split. O problema é: ___. Bairro: ___." href="https://wa.me/5551983190048">Solicitar manutenção</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="fundo">
+  <div class="wrap">
+    <div class="cab">
+      <span>Por que a Saron</span>
+      <h2>Quem só trabalha com split, faz bem feito</h2>
+    </div>
+    <div class="difs">
+      <div class="dif"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="6" width="18" height="8" rx="2"/><path d="M7 11h10M8 18v1M12 18v2M16 18v1"/></svg></div><div><h3>Especialistas em split</h3><p>É o único tipo de aparelho com que trabalhamos, todos os dias.</p></div></div>
+      <div class="dif"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20l1.400-4.400A8 8 0 1 1 8.500 19L4 20Z"/></svg></div><div><h3>Orçamento pelo WhatsApp</h3><p>Mande o modelo do aparelho e uma foto do local.</p></div></div>
+      <div class="dif"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 5 6v5c0 4.500 3 8 7 10 4-2 7-5.500 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div><div><h3>Serviço com garantia</h3><p><span class="tk">[prazo e cobertura da garantia]</span></p></div></div>
+      <div class="dif"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.200 7-11.500A7 7 0 0 0 5 9.500C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg></div><div><h3>Atendimento local</h3><p>Estamos em Viamão e atendemos a região.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="cab">
+      <span>Como funciona</span>
+      <h2>Do contato ao serviço pronto</h2>
+    </div>
+    <ol class="passos">
+      <li><div><h3>Você entra em contato</h3><p>Chame no WhatsApp e diga se é instalação ou manutenção.</p></div></li>
+      <li><div><h3>Enviamos o orçamento</h3><p>Com o valor e o que está incluso. <span class="tk">[por mensagem ou com visita?]</span></p></div></li>
+      <li><div><h3>Agendamos a visita</h3><p>Combinamos dia e turno. <span class="tk">[prazo médio para agendar]</span></p></div></li>
+      <li><div><h3>Serviço feito e testado</h3><p>Testamos o aparelho com você. Pagamento: <span class="tk">[formas de pagamento]</span></p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <div class="cab">
+      <span>Área atendida</span>
+      <h2>Atendemos Viamão e região</h2>
+      <p>Confira os locais atendidos. Se o seu bairro não estiver na lista, pergunte pelo WhatsApp.</p>
+    </div>
+    <ul class="bairros">
+      <li>Viamão</li>
+      <li><span class="tk">[bairro atendido]</span></li>
+      <li><span class="tk">[bairro atendido]</span></li>
+      <li><span class="tk">[bairro atendido]</span></li>
+      <li><span class="tk">[cidades vizinhas atendidas]</span></li>
+    </ul>
+    <p class="centro"><a class="btn zap" data-msg="Olá! Vocês atendem no bairro ___?" href="https://wa.me/5551983190048">Perguntar sobre meu bairro</a></p>
+  </div>
+</section>
+
+<section id="clientes">
+  <div class="wrap">
+    <div class="cab">
+      <span>Depoimentos</span>
+      <h2>O que dizem nossos clientes</h2>
+    </div>
+    <div class="cards tres">
+      <blockquote class="depo" style="margin:0"><p><span class="tk">[depoimento real de cliente]</span></p><cite><span class="tk">[nome]</span>, <span class="tk">[bairro]</span></cite></blockquote>
+      <blockquote class="depo" style="margin:0"><p><span class="tk">[depoimento real de cliente]</span></p><cite><span class="tk">[nome]</span>, <span class="tk">[bairro]</span></cite></blockquote>
+      <blockquote class="depo" style="margin:0"><p><span class="tk">[depoimento real de cliente]</span></p><cite><span class="tk">[nome]</span>, <span class="tk">[bairro]</span></cite></blockquote>
+    </div>
+    <div class="fotos">
+      <figure class="ph r11"><div><b>Foto real</b>Serviço feito pela Saron</div></figure>
+      <figure class="ph r11"><div><b>Foto real</b>Serviço feito pela Saron</div></figure>
+      <figure class="ph r11" style="grid-column:auto"><div><b>Foto real</b>Responsável em serviço</div></figure>
+    </div>
+  </div>
+</section>
+
+<section class="fundo" id="perguntas">
+  <div class="wrap">
+    <div class="cab">
+      <span>Dúvidas</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>Vocês atendem no meu bairro?</summary><p>Atendemos Viamão e <span class="tk">[bairros e cidades vizinhas]</span>. Na dúvida, envie o seu bairro pelo WhatsApp.</p></details>
+      <details><summary>Quanto tempo leva a instalação?</summary><p><span class="tk">[tempo médio de uma instalação]</span>. O tempo pode variar conforme o local e a distância entre as unidades.</p></details>
+      <details><summary>O que está incluso na instalação?</summary><p><span class="tk">[itens e metragem de tubulação inclusos]</span>. O que não estiver incluso é informado no orçamento.</p></details>
+      <details><summary>O serviço tem garantia?</summary><p><span class="tk">[prazo e cobertura da garantia]</span></p></details>
+      <details><summary>Quais as formas de pagamento?</summary><p><span class="tk">[pix, cartão, parcelamento?]</span></p></details>
+      <details><summary>Vocês vendem o aparelho?</summary><p><span class="tk">[vende aparelho ou só instala?]</span></p></details>
+      <details><summary>O split também aquece no inverno?</summary><p>Sim, os modelos quente e frio aquecem bem. Se o seu parou de aquecer, pode ser falta de limpeza ou de manutenção.</p></details>
+      <details><summary>Como peço um orçamento?</summary><p>Pelo WhatsApp, no <a data-msg="Olá! Gostaria de um orçamento." href="https://wa.me/5551983190048">(51) 98319-0048</a>. Informe o serviço, o modelo do aparelho e o bairro.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div class="caixa">
+      <div>
+        <h2>Peça seu orçamento sem compromisso</h2>
+        <p>Fale com a Saron pelo WhatsApp e receba o orçamento da sua instalação ou manutenção.</p>
+        <a class="btn zap" data-msg="Olá! Gostaria de um orçamento." href="https://wa.me/5551983190048">Chamar no WhatsApp</a>
+      </div>
+      <dl>
+        <div><dt>Telefone</dt><dd><a href="tel:+5551983190048">(51) 98319-0048</a></dd></div>
+        <div><dt>Endereço</dt><dd>Rua Maranhão <span class="tk">[número e bairro]</span>, Viamão, RS</dd></div>
+        <div><dt>Horário</dt><dd><span class="tk">[horário de atendimento, a confirmar]</span></dd></div>
+        <div><dt>Facebook</dt><dd><span class="tk">[link da página]</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Saron Instalação de Split · Viamão, RS · (51) 98319-0048</div>
+</footer>
+
+<div class="barra">
+  <a class="btn zap" id="fixo" data-msg="Olá! Gostaria de um orçamento para instalação de split." href="https://wa.me/5551983190048">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.200" aria-hidden="true"><path d="M4 20l1.400-4.400A8 8 0 1 1 8.500 19L4 20Z"/></svg>
+    <span>Pedir orçamento no WhatsApp</span>
+  </a>
+</div>
+
+<script>
+(function(){
+  var base='https://wa.me/5551983190048?text=';
+  document.querySelectorAll('a[data-msg]').forEach(function(a){
+    a.href=base+encodeURIComponent(a.getAttribute('data-msg'));a.target='_blank';a.rel='noopener';
+  });
+})();
+</script>
+</body>
+</html>
